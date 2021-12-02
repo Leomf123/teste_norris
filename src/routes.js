@@ -1,24 +1,27 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import Home from './views/Home';
-import Categories from './views/Categories';
+
 import Error404 from './views/Error';
 
 import Header from './components/Header';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+
+import Categories from './views/categories';
+
 
 const RouteComponent = () => {
-  return(
-    <BrowserRouter>
-      <Header />
+    return (
+        <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/categories/:category" element={<Categories />} />
-          <Route path="*" element={<Error404 />} />
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Error404 />} />
+            <Route path="/categories/:category" element={ < Categories /> } />
         </Routes>
-      <Footer />
-    </BrowserRouter>
-  )
+        <Footer/>
+        </BrowserRouter>
+    );
 }
 
 export default RouteComponent;
