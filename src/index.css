@@ -2,159 +2,35 @@
   padding: 0;
   margin: 0;
   font-family: 'Lobster', cursive;
-  
-  box-sizing: border-box;
 }
-
-.home-component{
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  /*border: 5px red solid;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 70vh;
-  background-color: #faf8e3;
-  align-items: center;
-  
-}
-
-.home-component .titulo{
-  width: 75%;
-  /*border: 5px black solid;*/
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.titulo h1{
-  font-size: 4em;
-  font-family: 'Press Start 2P', cursive;
-  color: #f98484;
-  text-shadow: 2px 2px black;
-}
-
-/*-----formulario-----------------------------*/
-.home-component form{
-  /*border: 5px green solid;*/
-  display: flex;
-  
-  justify-content: center;
-  align-items: center;
-  height: 30%;
-  width: 75%;
-
-}
-
-form .label_pesquisa{
-  width: 30%;
-  /*border: 5px blue solid;*/
-  text-align: center;
-  font-size: 1.5em;
-}
-form .entrada_pesquisa{
-  /*border: 5px blue solid;*/
-   width: 60%;
-}
-
-form .botao_pesquisa{
-  /*border: 5px blue solid;*/
-   width: 15%;
-}
-
-
-
-/*--parte da piada--------------------------*/
-.home-component .jokes{
- /* height: 500px;*/
-  
-  /*border: 5px #faf8e3 groove;*/
-  /*background-color: white;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-  padding-top: 5%;
-  
-  
-}
-
-
-
-.home-component .jokes h3{
-  /*border: 5px yellow solid;*/
-  font-size: 1.5em;
-  font-family: 'Press Start 2P', cursive;
-  text-shadow: 2px 2px white;
-  
-
-}
-
-.home-component .jokes img{
-  /*border: 5px yellow solid;*/
-  height: 5%;
-  width: 5%;
-  padding-bottom: 1%;
-  
-
-}
-
-/*------loader --------------*/
-
 
 .loader{
   display: flex;
   justify-content:  center;
   align-items: center;
   height: 70vh;
-  background-color: #faf8e3;
   /* background-image: url(./assets/loader.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; */
 }
 
-/*------header-----------*/
+.home-component{
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
 
-nav{
-  padding-top: 2%;
-  background-color: #faf8e3;
-  
-  border-bottom: 1px #c4c4c4 solid;
-  padding-bottom: 1%;
+.home-component .jokes{
+  height: 500px
 }
 
 nav .logo {
   height: 150px;
   width: auto;
-  /*border: 5px blue solid;*/
 }
-
-nav .menu_suspenso{
-  border: 5px blue solid;
-}
-
-nav .seletor_categorias{
-  width: 30%;
-}
-
-.seletor_categorias .label_seletor{
-  color: #f98484;
-}
-
-/*------Footer------------*/
 
 footer{
   text-align: center;
-  height: 15vh;
-  padding-top: 1%;
-  background-color: #faf8e3;
-  /*background-color: #f98484;*/
-  border-top: 1px #c4c4c4 solid;
-  
-}
-
-footer h1{
-  color: #f98484;
+  height: 180px;
 }
